@@ -3,6 +3,18 @@ package array02
 /**
  *
  */
+
+class Main {
+
+    fun myFunction(parameter1: Int, parameter2: String) {
+        // Method body
+        // Statements to be executed
+        println("Parameter 1: $parameter1")
+        println("Parameter 2: $parameter2")
+    }
+
+
+}
 object ThreeSum {
     val nums2 = intArrayOf(-1,0,1,2,-1,-4)
     val result = intArrayOf(-1,0,1)
@@ -17,15 +29,8 @@ object ThreeSum {
             var total = nums[i]+nums[j]+nums[k]
             if(total == 0)
                 output.add(mutableListOf(nums[i],nums[j],nums[k]))
-             
             i++
         }
-
-
-
-
-
-
      output.add(mutableListOf(1,2,3))
      return output
     }

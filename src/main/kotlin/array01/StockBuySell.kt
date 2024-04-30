@@ -37,4 +37,10 @@ class StockBuySell {
     }
 
 
+    fun getMaxProfit2(prices : IntArray){
+        for (i in prices){
+
+
+        }
+    }
 }

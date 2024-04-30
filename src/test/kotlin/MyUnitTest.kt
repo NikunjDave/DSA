@@ -81,7 +81,7 @@ fun testDuplicateString(){
 
     @Test
     fun two_sum(){
-        val result = TwoSum().twoSumInUnsorted(intArrayOf(3,2,4),6)
+        val result = TwoSum().twoSumInUnsorted(intArrayOf(1,2,3,4,5,6),6)
         println("output is ${result?.joinToString(",")}")
     }
 
