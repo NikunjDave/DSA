@@ -11,7 +11,8 @@ object RotateArray {
         while (position < rotateCount){
             val array2 = IntArray(originalArray.size){0}
              array2[0] = input[last]
-             System.arraycopy(input,0,array2,1,last)
+             System.arraycopy(input,0,array2,1,last) //
+            // argument order :(sourceArray,startPosOfSource,destArray,startPosOfDest,numOfElementTobeCopied)
             input = array2
             position++
         }
