@@ -97,4 +97,35 @@ class SpiralMatrices {
         return list
     }
 
+
+    fun spiralElement2(arr: Array<IntArray>) : List<Int> {
+        val output = mutableListOf<Int>()
+        var maxRow = arr.size
+        var maxCol = arr[0].size
+        var direction = 1
+        var row = 0
+        var col = -1
+
+        while (maxRow > 0 || maxCol >0){
+           for (i in 0 until maxCol){
+                col += direction
+                output.add(arr[row][col])
+            }
+            maxRow --
+
+            for(i in 0 until maxRow){
+                row += direction
+                output.add(arr[row][col])
+            }
+            maxCol --
+            direction *= -1
+        }
+
+        return output
+    }
+
+}
+
+fun main(){
+
 }

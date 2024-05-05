@@ -7,22 +7,22 @@ package matrices
  */
 class RowColZero {
 
-    fun turnZeroIfAny(matrix : Array<IntArray>) : Array<IntArray>{
+    fun turnZeroIfAny(matrix: Array<IntArray>): Array<IntArray> {
         var input = matrix
-        val rowLen = input.size-1
-        val columnLen = input[0].size-1
-        for (row in 0 .. rowLen){
-            for(column in 0 .. columnLen){
-                if(input[row][column] == 0){
-                  var rowPtr = 0
-                  var colPtr = 0
+        val rowLen = input.size - 1
+        val columnLen = input[0].size - 1
+        for (row in 0..rowLen) {
+            for (column in 0..columnLen) {
+                if (input[row][column] == 0) {
+                    var rowPtr = 0
+                    var colPtr = 0
                     // make entire row to 0
-                    while(colPtr <= columnLen){
+                    while (colPtr <= columnLen) {
                         input[row][colPtr] = 0
                         colPtr += 1
                     }
                     // make entire row to 0
-                    while(rowPtr <= rowLen){
+                    while (rowPtr <= rowLen) {
                         input[rowPtr][column] = 0
                         rowPtr += 1
                     }
@@ -34,27 +34,27 @@ class RowColZero {
     }
 
 
-    fun turnZeroIfAny2(matrix : Array<IntArray>) : Array<IntArray>{
+    fun turnZeroIfAny2(matrix: Array<IntArray>): Array<IntArray> {
         var input = matrix
 
         val rowSize = input.size
         val colSize = input[0].size
-        val rowArr = Array(rowSize){0}
-        val colArr = Array(colSize){0}
+        val rowArr = Array(rowSize) { 0 }
+        val colArr = Array(colSize) { 0 }
 
-        for (row in 0..<rowSize){
-            for(column in 0..<colSize){
-                if(input[row][column] == 0){
+        for (row in 0..<rowSize) {
+            for (column in 0..<colSize) {
+                if (input[row][column] == 0) {
                     rowArr[row] = 1
-                    colArr[column] =1
+                    colArr[column] = 1
                 }
             }
         }
 
         // marking 1 are turn to be 0
-        for (row in 0..<rowSize){
-            for(column in 0..<colSize){
-                if(rowArr[row] == 1 || colArr[column] == 1){
+        for (row in 0..<rowSize) {
+            for (column in 0..<colSize) {
+                if (rowArr[row] == 1 || colArr[column] == 1) {
                     input[row][column] = 0
                 }
             }
