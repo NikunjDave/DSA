@@ -2,6 +2,12 @@ package heap
 
 import java.util.PriorityQueue
 
+/**
+ * Given an infinite stream of integers (sorted or unsorted), nums, design a class to find the 𝑘𝑡ℎ largest element in a
+ * stream.
+ * Input  = 3,6,9,12, k = 3
+ * output  = 6
+ */
 object KthLargestElement {
     fun findKthLargest(nums: IntArray, k: Int): Int {
         val queue = PriorityQueue<Int>()
@@ -17,6 +23,7 @@ object KthLargestElement {
         }
         return queue.peek()
     }
+
 }
 
 /**
@@ -24,6 +31,6 @@ object KthLargestElement {
  * Space Complexity : O(k)
  */
 fun main(){
-    val result = KthLargestElement.findKthLargest(intArrayOf(3,6,9,12),3)
-    println("result is $result")
+    val result = KthLargestElement.findKthLargest(intArrayOf(6,3,9,12),3)
+    println("largest is $result")
 }

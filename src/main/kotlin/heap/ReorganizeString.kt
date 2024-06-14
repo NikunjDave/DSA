@@ -2,6 +2,14 @@ package heap
 
 import java.util.*
 
+/**
+ * Given a string, str, rearrange it so that any two adjacent characters are not the same. If such a reorganization of
+ * the characters is possible, output any possible valid arrangement. Otherwise, return an empty string.
+ *
+ * Input : "aaabc"
+ * output : "abaca" or "acaba"
+ * Input = "aaaab" o/p = ""
+ */
 object ReorganizeString {
     fun reorganizeString(s: String): String {
         val result = StringBuilder()
