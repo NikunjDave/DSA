@@ -4,6 +4,9 @@ import data.TreeNode
 import java.util.LinkedList
 import java.util.Stack
 
+/**
+ * LeetCode : 104
+ */
 object MaxDepth {
     fun findMaxDepth(root : TreeNode<Int>?): Int{
         var level = 0
