@@ -1,8 +1,7 @@
-package tree
+package tree.bfs
 
 import data.TreeNode
 import java.util.LinkedList
-import java.util.Stack
 
 /**
  * Leetcode : 102

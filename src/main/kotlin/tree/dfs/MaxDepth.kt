@@ -1,8 +1,7 @@
-package tree
+package tree.dfs
 
 import data.TreeNode
 import java.util.LinkedList
-import java.util.Stack
 
 /**
  * LeetCode : 104

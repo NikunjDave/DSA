@@ -12,9 +12,9 @@ import stack.RemoveDuplicates
 import stack.RemoveParenthesis
 import stack.StackQueue
 import threading.TestMultiThreading
-import tree.InorderTraversal
-import tree.PostOderTraversal
-import tree.PreOderTraversal
+import tree.dfs.InorderTraversal
+import tree.dfs.PostOderTraversal
+import tree.dfs.PreOderTraversal
 import linkedlist.LruCache
 import matrices.Sudoku
 import org.junit.jupiter.api.Test

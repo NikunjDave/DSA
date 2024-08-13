@@ -1,7 +1,6 @@
-package tree
+package tree.dfs
 
 import data.TreeNode
-import data.createTree
 import java.util.LinkedList
 import kotlin.math.absoluteValue
 

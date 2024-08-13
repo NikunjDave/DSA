@@ -1,7 +1,8 @@
-package tree
+package tree.dfs
 
 import data.TreeNode
 import data.createTree
+import tree.bfs.LevelOrder
 
 /**
  * Invert Binary tree/mirror binary tree

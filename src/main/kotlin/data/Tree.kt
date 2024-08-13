@@ -7,6 +7,7 @@ class TreeNode<T>(var data: T) {
     var right : TreeNode<T>?  = null
 }
 
+// this creates level order tree
 fun createTree(): TreeNode<Int>{
     val node  =  TreeNode(1)
     node.left = TreeNode(2)

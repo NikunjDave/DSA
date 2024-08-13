@@ -1,4 +1,4 @@
-package tree
+package tree.dfs
 
 import data.TreeNode
 import java.util.Stack
