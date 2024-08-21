@@ -1,4 +1,5 @@
 import array01.*
+import array01.MajorityElement
 import array02.*
 import data.createTree
 import hashmap.RansomNote
